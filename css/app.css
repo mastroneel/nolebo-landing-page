@@ -1,0 +1,109 @@
+body {
+  padding: 0;
+  margin: 0; }
+
+.row {
+  padding: 0;
+  margin: 0; }
+
+.header {
+  background-color: #ff3f60;
+  height: 85vh; }
+
+.sub-banner-section {
+  height: 75vh;
+  background-color: #fff; }
+
+.speech-bubbles {
+  height: 85vh;
+  background-color: #4b4b4b;
+  margin: 15px; }
+
+.checkbox {
+  height: 85vh;
+  background-color: #fff581;
+  margin: 15px 15px 0 15px; }
+
+.package-1, .package-3 {
+  height: 85vh;
+  background-color: #0054d2;
+  position: relative;
+  z-index: 1; }
+  .package-1 h1, .package-3 h1 {
+    font-size: 7em;
+    color: #fff; }
+  .package-1 h2, .package-3 h2 {
+    color: white; }
+  .package-1 .yellow-banner, .package-3 .yellow-banner {
+    height: 60px;
+    background-color: #ffff00;
+    width: 90%; }
+  .package-1:before, .package-1:after, .package-3:before, .package-3:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; }
+  .package-1:before, .package-3:before {
+    top: 0;
+    -webkit-transform: skewY(1.5deg);
+        -ms-transform: skewY(1.5deg);
+            transform: skewY(1.5deg);
+    -webkit-transform-origin: 100% 0;
+        -ms-transform-origin: 100% 0;
+            transform-origin: 100% 0; }
+  .package-1:after, .package-3:after {
+    bottom: 0;
+    -webkit-transform: skewY(-1.5deg);
+        -ms-transform: skewY(-1.5deg);
+            transform: skewY(-1.5deg);
+    -webkit-transform-origin: 100%;
+        -ms-transform-origin: 100%;
+            transform-origin: 100%; }
+
+.package-2 {
+  height: 95vh; }
+
+.banner {
+  height: 90vh; }
+
+.yellow-section-1, .yellow-section-2 {
+  height: 40vh;
+  background-color: #fff581;
+  position: relative;
+  z-index: 1; }
+  .yellow-section-1:before, .yellow-section-1:after, .yellow-section-2:before, .yellow-section-2:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; }
+  .yellow-section-1:before, .yellow-section-2:before {
+    top: 0;
+    -webkit-transform: skewY(1.5deg);
+        -ms-transform: skewY(1.5deg);
+            transform: skewY(1.5deg);
+    -webkit-transform-origin: 100% 0;
+        -ms-transform-origin: 100% 0;
+            transform-origin: 100% 0; }
+  .yellow-section-1:after, .yellow-section-2:after {
+    bottom: 0;
+    -webkit-transform: skewY(-1.5deg);
+        -ms-transform: skewY(-1.5deg);
+            transform: skewY(-1.5deg);
+    -webkit-transform-origin: 100%;
+        -ms-transform-origin: 100%;
+            transform-origin: 100%; }
+
+.white-section {
+  height: 60vh; }
+
+/*# sourceMappingURL=app.css.map */
