@@ -1,17 +1,21 @@
 .speech-bubbles {
-  height: 85vh;
+  height: 507px;
   background-color: $gray-background;
-  margin: 15px;
+  img {
+    margin-top: -35px;
+  }
 }
 
 .checkbox {
-  height: 85vh;
+  height: 450px;
   background-color: $yellow-background;
-  margin: 15px 15px 0 15px;
+  img {
+    margin-top: 65px;
+  }
 }
 
 .package-1, .package-3 {
-  height: 85vh;
+  padding: 85px 0;
   background-color: $blue;
   position: relative;
   z-index: 1;
@@ -52,42 +56,19 @@
 }
 
 .package-2 {
-  height: 95vh;
+  padding: 125px 0;
 }
 
 .banner {
   height: 90vh;
 }
 
-.yellow-section-1, .yellow-section-2 {
-  height: 40vh;
+.yellow-section {
+  padding: 85px 0;
   background-color: $yellow-background;
   position: relative;
-  z-index: 1;
-  &:before, &:after {
-    background: inherit;
-    content: '';
-    display: block;
-    height: 50%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    -webkit-backface-visibility: hidden; // for Chrome Windows
-  }
-  &:before {
-    top: 0;
-    transform: skewY(1.5deg);
-    transform-origin: 100% 0;
-  }
-
-  &:after {
-    bottom: 0;
-    transform: skewY(-1.5deg);
-    transform-origin: 100%;
-  }
 }
 
 .white-section {
-  height: 60vh;
+  padding: 85px 0;
 }
