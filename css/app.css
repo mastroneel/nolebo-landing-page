@@ -1001,9 +1001,12 @@ body {
 @media only screen and (min-width: 300px) and (max-width: 469px) {
   .header img {
     margin-bottom: -36px; } }
-@media only screen and (min-width: 300px) and (max-width: 695px) {
+@media only screen and (min-width: 400px) and (max-width: 695px) {
   .sub-banner-section .btn {
     font-size: 1.3em; } }
+@media only screen and (min-width: 300px) and (max-width: 399px) {
+  .sub-banner-section .btn {
+    font-size: 1em; } }
 .speech-bubbles {
   background-color: #545454; }
   .speech-bubbles img {
