@@ -1,16 +1,19 @@
 .speech-bubbles {
-  height: 507px;
+
   background-color: $gray-background;
   img {
     margin-top: -35px;
+    margin-bottom: -63px;
+    width: 100%;
   }
 }
 
 .checkbox {
-  height: 450px;
   background-color: $yellow-background;
+  padding: 40px 0 100px 0;
   img {
     margin-top: 65px;
+    width: 100%;
   }
 }
 
@@ -19,17 +22,8 @@
   background-color: $blue;
   position: relative;
   z-index: 1;
-  h1 {
-    font-size: 7em;
-    color: $white;
-  }
-  h2 {
-    color: white;
-  }
-  .yellow-banner {
-    height: 60px;
-    background-color: $yellow-banner;
-    width: 90%;
+  img {
+    width: 100%;
   }
   &:before, &:after {
     background: inherit;
@@ -57,18 +51,215 @@
 
 .package-2 {
   padding: 125px 0;
-}
-
-.banner {
-  height: 90vh;
+  img {
+    width: 100%;
+  }
 }
 
 .yellow-section {
   padding: 85px 0;
   background-color: $yellow-background;
   position: relative;
+  img {
+    width: 100%;
+  }
 }
 
 .white-section {
   padding: 85px 0;
+  img {
+    width: 100%;
+  }
+}
+
+
+// *************
+// Media queries
+// *************
+
+// Changing bottom margin of speech bubble image to line up with div
+// Largest screens to smallest
+
+@media only screen and (min-width: 2470px) {
+  .speech-bubbles {
+    img {
+      margin-bottom: -105px;
+    }
+  }
+}
+
+@media only screen and (min-width: 2341px) and (max-width: 2469px) {
+  .speech-bubbles {
+    img {
+      margin-bottom: -100px;
+    }
+  }
+}
+
+@media only screen and (min-width: 2221px) and (max-width: 2340px) {
+  .speech-bubbles {
+    img {
+      margin-bottom: -95px;
+    }
+  }
+}
+
+@media only screen and (min-width: 2091px) and (max-width: 2220px) {
+  .speech-bubbles {
+    img {
+      margin-bottom: -90px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1976px) and (max-width: 2090px) {
+  .speech-bubbles {
+    img {
+      margin-bottom: -85px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1841px) and (max-width: 1975px) {
+  .speech-bubbles {
+    img {
+      margin-bottom: -80px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1696px) and (max-width: 1840px) {
+  .speech-bubbles {
+    img {
+      margin-bottom: -75px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1586px) and (max-width: 1695px) {
+  .speech-bubbles {
+    img {
+      margin-bottom: -70px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1520px) and (max-width: 1585px) {
+  .speech-bubbles {
+    img {
+      margin-bottom: -65px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1325px) and (max-width: 1385px) {
+  .speech-bubbles {
+    img {
+      margin-bottom: -59px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1220px) and (max-width: 1325px) {
+  .speech-bubbles {
+    img {
+      margin-bottom: -56px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1150px) and (max-width: 1219px) {
+  .speech-bubbles {
+    img {
+      margin-bottom: -53px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1149px) {
+  .speech-bubbles {
+    img {
+      margin-bottom: -48px;
+    }
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1024px) {
+  .speech-bubbles {
+    img {
+      margin-bottom: -44px;
+    }
+  }
+}
+
+@media only screen and (min-width: 890px) and (max-width: 992px) {
+  .speech-bubbles {
+    img {
+      margin-bottom: -68px;
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 889px) {
+  .speech-bubbles {
+    img {
+      margin-bottom: -62px;
+    }
+  }
+}
+
+@media only screen and (min-width: 711px) and (max-width: 799px) {
+  .speech-bubbles {
+    img {
+      margin-bottom: -56px;
+    }
+  }
+}
+
+@media only screen and (min-width: 630px) and (max-width: 710px) {
+  .speech-bubbles {
+    img {
+      margin-bottom: -50px;
+    }
+  }
+}
+
+@media only screen and (min-width: 560px) and (max-width: 629px) {
+  .speech-bubbles {
+    img {
+      margin-bottom: -45px;
+    }
+  }
+}
+
+@media only screen and (min-width: 495px) and (max-width: 559px) {
+  .speech-bubbles {
+    img {
+      margin-bottom: -40px;
+    }
+  }
+}
+
+@media only screen and (min-width: 440px) and (max-width: 494px) {
+  .speech-bubbles {
+    img {
+      margin-bottom: -36px;
+    }
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 439px) {
+  .speech-bubbles {
+    img {
+      margin-bottom: -33px;
+    }
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 399px) {
+  .speech-bubbles {
+    img {
+      margin-bottom: -30px;
+    }
+  }
 }
