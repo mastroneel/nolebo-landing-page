@@ -40,7 +40,6 @@
     transform: skewY(1.5deg);
     transform-origin: 100% 0;
   }
-
   &:after {
     bottom: 0;
     transform: skewY(-1.5deg);
@@ -55,7 +54,7 @@
   }
 }
 
-.yellow-section {
+.yellow-section-desktop {
   padding: 85px 0;
   background-color: $yellow-background;
   position: relative;
@@ -64,7 +63,14 @@
   }
 }
 
-.white-section {
+.yellow-section-mobile-1,
+.yellow-section-mobile-2,
+.white-section-mobile-1,
+.white-section-mobile-2 {
+  display: none;
+}
+
+.white-section-desktop {
   padding: 85px 0;
   img {
     width: 100%;
@@ -75,6 +81,72 @@
 // *************
 // Media queries
 // *************
+
+// Change bottom of page design for mobile
+
+@media only screen and (max-width: 575px) {
+  .yellow-section-desktop {
+    display: none;
+  }
+  .yellow-section-mobile-1, .yellow-section-mobile-2 {
+    display: block;
+    background-color: $yellow-background;
+    position: relative;
+    z-index: 1;
+    margin-top: 25px;
+    img {
+      width: 100%;
+    }
+    &:before, &:after {
+      background: inherit;
+      content: '';
+      display: block;
+      height: 50%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      -webkit-backface-visibility: hidden; // for Chrome Windows
+    }
+    &:before {
+      top: 0;
+      transform: skewY(1.5deg);
+      transform-origin: 100% 0;
+    }
+    &:after {
+      bottom: 0;
+      transform: skewY(-1.5deg);
+      transform-origin: 100%;
+    }
+  }
+  .yellow-section-mobile-1 {
+    padding: 70px 10px 0 10px;
+    img {
+      margin-top: -130px;
+    }
+  }
+  .yellow-section-mobile-2 {
+    padding-bottom: 5px;
+  }
+  .white-section-mobile-1 {
+    display: block;
+    img {
+      width: 100%;
+      margin-top: 15px;
+    }
+  }
+  .white-section-desktop {
+    display: none;
+  }
+  .white-section-mobile-2 {
+    display: block;
+    padding: 20px 0;
+    img {
+      width: 100%;
+      margin-top: 15px;
+    }
+  }
+}
 
 // Changing bottom margin of speech bubble image to line up with div
 // Largest screens to smallest
@@ -154,7 +226,7 @@
 @media only screen and (min-width: 1325px) and (max-width: 1385px) {
   .speech-bubbles {
     img {
-      margin-bottom: -59px;
+      margin-bottom: -60px;
     }
   }
 }
@@ -162,7 +234,7 @@
 @media only screen and (min-width: 1220px) and (max-width: 1325px) {
   .speech-bubbles {
     img {
-      margin-bottom: -56px;
+      margin-bottom: -66px;
     }
   }
 }
@@ -175,7 +247,7 @@
   }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1149px) {
+@media only screen and (min-width: 1024px) and (max-width: 1149px) {
   .speech-bubbles {
     img {
       margin-bottom: -48px;
@@ -183,10 +255,10 @@
   }
 }
 
-@media only screen and (min-width: 993px) and (max-width: 1024px) {
+@media only screen and (min-width: 993px) and (max-width: 1023px) {
   .speech-bubbles {
     img {
-      margin-bottom: -44px;
+      margin-bottom: -70px;
     }
   }
 }
@@ -194,7 +266,7 @@
 @media only screen and (min-width: 890px) and (max-width: 992px) {
   .speech-bubbles {
     img {
-      margin-bottom: -68px;
+      margin-bottom: -72px;
     }
   }
 }
@@ -202,7 +274,7 @@
 @media only screen and (min-width: 800px) and (max-width: 889px) {
   .speech-bubbles {
     img {
-      margin-bottom: -62px;
+      margin-bottom: -66px;
     }
   }
 }
@@ -210,7 +282,7 @@
 @media only screen and (min-width: 711px) and (max-width: 799px) {
   .speech-bubbles {
     img {
-      margin-bottom: -56px;
+      margin-bottom: -60px;
     }
   }
 }
@@ -218,7 +290,7 @@
 @media only screen and (min-width: 630px) and (max-width: 710px) {
   .speech-bubbles {
     img {
-      margin-bottom: -50px;
+      margin-bottom: -53px;
     }
   }
 }
@@ -226,7 +298,7 @@
 @media only screen and (min-width: 560px) and (max-width: 629px) {
   .speech-bubbles {
     img {
-      margin-bottom: -45px;
+      margin-bottom: -49px;
     }
   }
 }
@@ -234,7 +306,7 @@
 @media only screen and (min-width: 495px) and (max-width: 559px) {
   .speech-bubbles {
     img {
-      margin-bottom: -40px;
+      margin-bottom: -44px;
     }
   }
 }
@@ -242,7 +314,7 @@
 @media only screen and (min-width: 440px) and (max-width: 494px) {
   .speech-bubbles {
     img {
-      margin-bottom: -36px;
+      margin-bottom: -42px;
     }
   }
 }
@@ -250,7 +322,7 @@
 @media only screen and (min-width: 400px) and (max-width: 439px) {
   .speech-bubbles {
     img {
-      margin-bottom: -33px;
+      margin-bottom: -37px;
     }
   }
 }
@@ -258,7 +330,7 @@
 @media only screen and (min-width: 300px) and (max-width: 399px) {
   .speech-bubbles {
     img {
-      margin-bottom: -30px;
+      margin-bottom: -34px;
     }
   }
 }

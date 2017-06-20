@@ -1,5 +1,4 @@
 .header {
-
   background-color: $pink;
   img {
     width: 100%;
@@ -36,22 +35,24 @@
     border-left: none;
     border-right: none;
     text-decoration: none;
+    transition: 0.1s ease-in;
     span {
       margin-left: 50px;
     }
     &:focus {
       outline: none;
     }
-  }
-  .btn:hover {
-    background: #00d0a7;
-    background-image: -webkit-linear-gradient(top, #00d0a7, #bffff2);
-    background-image: -moz-linear-gradient(top, #00d0a7, #bffff2);
-    background-image: -ms-linear-gradient(top, #00d0a7, #bffff2);
-    background-image: -o-linear-gradient(top, #00d0a7, #bffff2);
-    background-image: linear-gradient(to bottom, #00d0a7, #bffff2);
-    border-bottom: 10px solid lighten(#00d0a7, 30%);
-    text-decoration: none;
+    &:hover {
+      background: #009d74;
+      background-image: -webkit-linear-gradient(top, darken(#00d0a7, 20%), darken(#bffff2, 20%));
+      background-image: -moz-linear-gradient(top, #009d74, #8cccbf);
+      background-image: -ms-linear-gradient(top, #009d74, #8cccbf);
+      background-image: -o-linear-gradient(top, #009d74, #8cccbf);
+      background-image: linear-gradient(to bottom, #009d74, #8cccbf);
+      border-bottom: 10px solid #00d0a7;
+      text-decoration: none;
+      transition: 0.1s ease-in;
+    }
   }
 }
 
@@ -111,7 +112,7 @@
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1100px) {
+@media only screen and (min-width: 1024px) and (max-width: 1100px) {
   .header {
     img {
       margin-bottom: -29px;
@@ -119,26 +120,26 @@
   }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  .header {
+    img {
+      margin-bottom: -60px;
+    }
+  }
+}
+
 @media only screen and (min-width: 900px) and (max-width: 991px) {
   .header {
     img {
-      margin-bottom: -51px;
+      margin-bottom: -58px;
     }
   }
 }
 
-@media only screen and (min-width: 770px) and (max-width: 899px) {
+@media only screen and (min-width: 650px) and (max-width: 899px) {
   .header {
     img {
-      margin-bottom: -48px;
-    }
-  }
-}
-
-@media only screen and (min-width: 650px) and (max-width: 769px) {
-  .header {
-    img {
-      margin-bottom: -50px;
+      margin-bottom: -54px;
     }
   }
 }
@@ -146,7 +147,7 @@
 @media only screen and (min-width: 565px) and (max-width: 649px) {
   .header {
     img {
-      margin-bottom: -46px;
+      margin-bottom: -50px;
     }
   }
 }
@@ -154,7 +155,7 @@
 @media only screen and (min-width: 470px) and (max-width: 564px) {
   .header {
     img {
-      margin-bottom: -42px;
+      margin-bottom: -46px;
     }
   }
 }
@@ -162,7 +163,7 @@
 @media only screen and (min-width: 300px) and (max-width: 469px) {
   .header {
     img {
-      margin-bottom: -36px;
+      margin-bottom: -40px;
     }
   }
 }
